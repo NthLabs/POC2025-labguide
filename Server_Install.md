@@ -5,34 +5,34 @@ Configure Network Bridge
 ```
 $ sudo vi /etc/netplan/75-NthPOC.yaml
 ```
-
-> network:
->     bonds:
->         bond0:
->             interfaces:
->             - ens14f0np0
->             - ens14f1np1
->             parameters:
->                 mode: active-backup
->     bridges:
->         br0:
->             interfaces:
->             - bond0
->             addresses:
->             - 10.106.10.25/20
->             nameservers:
->                 addresses:
->                 - 10.106.10.5
->                 search:
->                 - nvision.nthlabs.com
->             routes:
->             -   to: default
->                 via: 10.106.1.1
->     ethernets:
->         ens14f0np0: {}
->         ens14f1np1: {}
->     version: 2
-
+```
+network:
+    bonds:
+        bond0:
+            interfaces:
+            - ens14f0np0
+            - ens14f1np1
+            parameters:
+                mode: active-backup
+    bridges:
+        br0:
+            interfaces:
+            - bond0
+            addresses:
+            - 10.106.10.25/20
+            nameservers:
+                addresses:
+                - 10.106.10.5
+                search:
+                - nvision.nthlabs.com
+            routes:
+            -   to: default
+                via: 10.106.1.1
+    ethernets:
+        ens14f0np0: {}
+        ens14f1np1: {}
+    version: 2
+```
 Apply Networking Configuration
 
 ```
@@ -97,17 +97,18 @@ Auto-mount storage at boot
 ```
 $ sudo vi /etc/fstab
 ```
-
-> /dev/data_vg/data_vol1  /VMs    ext4    defaults        0       0
-
+```
+/dev/data_vg/data_vol1  /VMs    ext4    defaults        0       0
+```
 Disable auto-updates
 
 ```
 $ sudo vi /etc/apt/apt.conf.d/20auto-upgrades
 ```
-
-> APT::Periodic::Update-Package-Lists "0";
-> APT::Periodic::Unattended-Upgrade "0";
+```
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Unattended-Upgrade "0";
+```
 
 Configure NTP
 
