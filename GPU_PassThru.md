@@ -11,17 +11,17 @@ Configure grub (Intel CPU + NVIDIA)
 ```
 $ sudo vi /etc/default/grub
 ```
-
-> GRUB_CMDLINE_LINUX="intel_iommu=on iommu=pt vfio-pci.ids=10de:26b9" 
-
+```
+GRUB_CMDLINE_LINUX="intel_iommu=on iommu=pt vfio-pci.ids=10de:26b9" 
+```
 Configure linux modules
 
 ```
 $ sudo vi /etc/modules
 ```
-
-> vfio-pci
-
+```
+vfio-pci
+```
 Update grub
 
 ```
