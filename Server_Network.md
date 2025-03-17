@@ -12,4 +12,4 @@ Connect Port 2 only to 10/25Gb networking infrastructure
 
 Insert RJ45 adaptor into Port 2 (as shown) and connect to 1Gb network
 
-![](C:\Users\lee\OneDrive%20-%20Nth%20Generation%20Computing,%20Inc\Presentations\NthAI\POC\labguide\images\POC-Network2.jpg)
+![](images/POC-Network2.jpg)
