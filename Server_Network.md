@@ -13,3 +13,7 @@ Connect Port 2 only to 10/25Gb networking infrastructure
 Insert RJ45 adaptor into Port 2 (as shown) and connect to 1Gb network
 
 ![](images/POC-Network2.jpg)
+
+## iLO
+
+Please attach the iLO port to 1Gb network
