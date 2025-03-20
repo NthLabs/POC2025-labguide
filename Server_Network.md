@@ -2,7 +2,9 @@
 
 ## Option 1 (Dual 10/25Gb - Preferred Option)
 
-Connect Port 1 and Port 2 to 10/25Gb networking infrastructure. For the POC, this will be an active-backup configuration. Meaning no LACP configuration on the switch is required.
+Connect Port 1 and Port 2 to 10/25Gb networking infrastructure. For the POC, this will be an active-backup configuration. 
+
+Meaning LACP configuration on the switch is NOT required.
 
 ## Option 2 (Single 10/25Gb)
 
